@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <style>
+        :root{
+            --accent-color:#008374;
+        }
+/*--------------------------------------------------------------
+# Recent Posts Section
+--------------------------------------------------------------*/
+.recent-posts article {
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--accent-color), transparent 90%);
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.recent-posts .post-img {
+    width: 100%;
+            height: 200px; /* Adjust height as needed */
+            overflow: hidden;
+}
+.recent-posts .post-img img{
+    width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.recent-posts .post-category {
+  font-size: 16px;
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  margin-bottom: 10px;
+}
+
+.recent-posts .title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.recent-posts .title a {
+  color: var(--accent-color);
+  transition: 0.3s;
+}
+
+.recent-posts .title a:hover {
+  color: var(--accent-color);
+}
+
+.recent-posts .post-author-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.recent-posts .post-author {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.recent-posts .post-date {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  margin-bottom: 0;
+}
+
+
+
+    </style>
+<!-- style conect -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .contact .info-item {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        height: 150px;
+    }
+    .contact .info-item h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+    }
+    .contact .info-item i {
+        font-size: 24px;
+        color: #e03a3c;
+    }
+    .php-email-form {
+        background: #fff;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    .php-email-form .form-control {
+        border-radius: 4px;
+    }
+    .php-email-form .loading,
+    .php-email-form .error-message,
+    .php-email-form .sent-message {
+        display: none;
+    }
+    .php-email-form .loading {
+        color: #5fcf80;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .php-email-form .sent-message {
+        color: #5fcf80;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .php-email-form .error-message {
+        color: red;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .section-title {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 0;
+        padding-bottom: 10px;
+        position: relative;
+        color: #333;
+    }
+    .section-title h2::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #e03a3c;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .section-title p {
+        margin-bottom: 0;
+        font-size: 15px;
+        color: #777;
+    }
+</style>
+    <title>prodact</title>
+</head>
+<body>
+     <!-- start header -->
+     <header dir="ltr">
+        <div class="container">
+          
+          <img class="logo-desktop" src="img/logo1.png" width="150" height="42" alt="Boycott-Israel.org logo">
+          <!-- <img class="logo-mobile" src="img/logo1.png" width="200" height="68" alt="Boycott-Israel.org logo"> -->
+          <!-- <img class="logo-mobile-white" src="img/logo1.png" width="200" height="68" alt="Boycott-Israel.org logo"></a> -->
+          <nav dir="rtl">
+            <div>
+            <a class="nav-item relative" href="index.html">الرئيسية
+              <div class="nav-alert">
+            </div>
+            </a><a class="nav-item" href="./boycott.html">قائمة المقاطعة</a>
+            <a class="nav-item" href="#our-goals"> اهدافنا</a>
+            <a class="nav-item" href="#about">من نحن</a>
+            <!-- <a class="nav-item" href="contact.html">Contact</a> -->
+          </div>
+            <!-- <div class="social-icons"><a class="invert xl:ml-8 relative -left-[2px] xl:left-0" href="#" target="_blank"> <img src="img/icons/icon-facebook.svg" alt="Facebook icon"></a><a class="invert ml-2 relative -left-[2px] xl:left-0" href="https://www.instagram.com/boycott_israel_org/" target="_blank"> <img src="img/icons/icon-instagram.svg" alt="Instagram icon"></a><a class="invert ml-2 relative -left-[2px] xl:left-0" href="https://www.tiktok.com/@boycott_israel_org" target="_blank"> <img src="img/icons/icon-tiktok.svg" alt="Tiktok icon"></a></div> -->
+          </nav>
+          <div class="lg:hidden hamburger" onclick="mobileNav()" >
+            <span class="material-symbols-rounded hamburger--open" >القائمة</span>
+            <span class="material-symbols-rounded hamburger--close">اغلاق</span>
+          </div>
+        </div>
+      </header>
+        <!-- and header -->
+        <section dir="rtl" class="banner py-14 md:py-20 bg-orange-100">
+            <!-- <img class="h-full w-full object-cover absolute inset-0 z-10" src="img/topographic-large.webp" alt="Topographic background yellow"> -->
+            <div class="container relative z-20 md:w-8/12">
+              <p class="text-lg md:text-2xl font-bold uppercase text-[#FF794D] mb-2 md:mb-3">دليل الاستهلاك الأخلاقي</p>
+              <h1 class="text-3xl md:text-6xl font-semibold md:leading-tight mb-3 md:mb-5">هل قتلت فلسطيني اليوم  ... ام دعمت اسرائيلي .... انصروا فلسطيني ولو بالمقاطعة. </h1>
+              <p class="md:text-xl md:leading-relaxed text-stone-600">
+                قائمة مقاطعة بسيطة تضم منتجات إسرائيلية وكيانات عالمية لها أنشطة كبيرة في إسرائيل. وتهدف إلى توجيه أولئك الذين يسعون إلى اتخاذ قرارات شراء تهدف إلى  افلاس  الشركات الإسرائيلية التي تدعم الكيان المحتل في قتل الابرياء.
+      </p>
+            </div>
+          </section>
+  <!-- prodact Section -->
+  <section id="prodact" class="recent-posts section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <div class="bg-emerald-700 py-8 pt-9 text-emerald-100">
+        <h2>المنتجات</h2></div>
+        <h3>
+        </h3>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+<!-- ---***************************--******************************* -->
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/1.jpg" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Politics</p> -->
+                </article>
+            </div>
+            <!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/2.jpg" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Sports</p> -->
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/3.jpeg" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Entertainment</p> -->
+                </article>
+            </div><!-- End post list item -->
+            <!-- ---***************************--******************************* -->
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/4.png" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Politics</p> -->
+                </article>
+            </div>
+            <!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/5.jpeg" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Sports</p> -->
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/6.jpg" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Entertainment</p> -->
+                </article>
+            </div><!-- End post list item -->
+               
+<!-- ---***************************--******************************* -->
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/7.jpg" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Politics</p> -->
+                </article>
+            </div>
+            <!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/8.jpg" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Sports</p> -->
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/9.jpg" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Entertainment</p> -->
+                </article>
+            </div><!-- End post list item -->
+            <!-- ---***************************--******************************* -->
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/10.png" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Politics</p> -->
+                </article>
+            </div>
+            <!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/11.jpg" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Sports</p> -->
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <article>
+
+                    <div class="post-img">
+                        <img src="./img/ESRAIL/12.jpg" height="" alt="" class="img-fluid">
+                    </div>
+                    <!-- <p class="post-category">Entertainment</p> -->
+                </article>
+            </div><!-- End post list item -->
+               
+<!-- ---***************************--******************************* -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/13.png" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Politics</p> -->
+    </article>
+</div>
+<!-- End post list item -->
+
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/14.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Sports</p> -->
+    </article>
+</div><!-- End post list item -->
+
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/15.png" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- ---***************************--******************************* -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/16.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Politics</p> -->
+    </article>
+</div>
+<!-- End post list item -->
+
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/17.png" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Sports</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/18.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/19.png" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/20.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/21.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/22.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item --><!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/23.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/24.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/25.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/26.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/27.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/29.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/30.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/31.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/32.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/34.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/35.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/36.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/37.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/38.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/39.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/40.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/41.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/42.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/43.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/44.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/45.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/46.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/47.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/48.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/49.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/50.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/52.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/53.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/54.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/55.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/56.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/57.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/58.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/59.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/60.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/61.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/62.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/63.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/64.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/65.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/66.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/67.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/68.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/69.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/70.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/71.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/72.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/73.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/74.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/75.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/76.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/77.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/78.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/79.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <article>
+
+        <div class="post-img">
+            <img src="./img/ESRAIL/80.jpg" height="" alt="" class="img-fluid">
+        </div>
+        <!-- <p class="post-category">Entertainment</p> -->
+    </article>
+</div><!-- End post list item -->
+        </div><!-- End recent posts list -->
+
+    </div>
+
+</section>
+<!-- /Recent Posts Section -->
+
+<hr>
+<br>
+<hr>
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title">
+        <h2>التواصل معنا</h2>
+        <h3>إذا كان لديك معلومات عن منتجات مقاطعة لم يتم اضافتها يمكنك التواصل معنا  لاضافتها في المجموعة  </h3>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-6">
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>Address</h3>
+                            <p>A108 Adam Street</p>
+                            <p> Taiz, TZ 11</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6">
+                        <div class="info-item">
+                            <i class="bi bi-telephone"></i>
+                            <h3>Call Us</h3>
+                            <p>+967 737 127 316</p>
+                            <p>+967 715 643 894</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-12">
+                        <div class="info-item">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p>gazafreepalestine73@Gamil.com</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                   
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <form  method="post" class="php-email-form">
+                    <div class="row gy-4">
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 ">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-danger">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- End Contact Form -->
+        </div>
+    </div>
+</section><!-- /Contact Section -->
+
+<hr>
+<br>
+<hr>
+<footer id="about" class="bg-emerald-600">
+    <div class="container">
+      <div class="flex flex-col md:flex-row mb-8 md:mb-12">
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="text-2xl md:text-5xl font-semibold md:leading-tight mb-8 pb-8 md:mb-14 md:pb-12 border-b-2 border-b-emerald-700 text-emerald-100">
+        ادعم التغيير بمقاطعة الشركات ذات الأنشطة المهمة في إسرائيل لتخفيف المعاناة</h2>
+    </div>
+   
+  </footer>
+  <div class="bg-emerald-700 py-8 pt-9 text-emerald-100">
+    <div class="container">
+      <div class="flex flex-col md:flex-row md:gap-20 md:items-center">
+        <div class="basis-full md:basis-6/12 mb-4 md:mb-0">
+          <p class="opacity-70">معاً لاجل المقاطعة</p>
+        </div>
+        <div class="basis-full md:basis-6/12 md:text-right">
+          <p class="opacity-70"> Copyright © 2024 | Nader Wadah </p>
+          <p class="opacity-70"> جميع الحقوق محفوضة © 2024 | المهندس /نادر وضاح</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+
+
+
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+         <script src="./js/main.js"></script>
+</body>
+</html>

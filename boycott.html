@@ -1,0 +1,1305 @@
+
+<!-- BOYCOTT MIXIN--><!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://boycott-israel.org/img/og.jpg">
+    <meta property="og:image:alt" content="Boycott Israel Banner">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="765">
+    <meta property="og:image:type" content="image/jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-180PTR07NS"></script> -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-180PTR07NS');
+      
+    </script><link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+    <title>Boycott Israel - A Simple Boycott List</title>
+    <meta name="description" content="A simple boycott list of Israeli and global firms active in Israel, guiding purchases to pressure the government and uphold international law.">
+  </head>
+  <body dir="rtl" >
+    <!-- start header -->
+    <header dir="ltr">
+      <div class="container">
+        <img class="logo-desktop" src="img/logo1.png" width="150" height="42" alt="Boycott-Israel.org logo">
+        <!-- <img class="logo-mobile" src="img/logo1.png" width="200" height="68" alt="Boycott-Israel.org logo"> -->
+        <!-- <img class="logo-mobile-white" src="img/logo1.png" width="200" height="68" alt="Boycott-Israel.org logo"></a> -->
+        <nav dir="rtl">
+          <div>
+          <a class="nav-item relative" href="index.html">الرئيسية
+            <div class="nav-alert">
+          </div>
+          </a><a class="nav-item" href="./boycott.html">قائمة الشركات المقاطعة</a>
+          <a class="nav-item" href="./prodact.html"> المنتجات</a>
+          <a class="nav-item" href="#about">من نحن</a>
+          <!-- <a class="nav-item" href="contact.html">Contact</a> -->
+        </div>
+          <!-- <div class="social-icons"><a class="invert xl:ml-8 relative -left-[2px] xl:left-0" href="#" target="_blank"> <img src="img/icons/icon-facebook.svg" alt="Facebook icon"></a><a class="invert ml-2 relative -left-[2px] xl:left-0" href="https://www.instagram.com/boycott_israel_org/" target="_blank"> <img src="img/icons/icon-instagram.svg" alt="Instagram icon"></a><a class="invert ml-2 relative -left-[2px] xl:left-0" href="https://www.tiktok.com/@boycott_israel_org" target="_blank"> <img src="img/icons/icon-tiktok.svg" alt="Tiktok icon"></a></div> -->
+        </nav>
+        <div class="lg:hidden hamburger" onclick="mobileNav()" >
+          <span class="material-symbols-rounded hamburger--open" >القائمة</span>
+          <span class="material-symbols-rounded hamburger--close">اغلاق</span>
+        </div>
+      </div>
+    </header>
+  
+      <!-- and header -->
+    <section class="banner py-14 md:py-20 bg-orange-100">
+      <!-- <img class="h-full w-full object-cover absolute inset-0 z-10" src="img/topographic-large.webp" alt="Topographic background yellow"> -->
+      <div class="container relative z-20 md:w-8/12">
+        <p class="text-lg md:text-2xl font-bold uppercase text-[#FF794D] mb-2 md:mb-3">دليل الاستهلاك الأخلاقي</p>
+        <h1 class="text-3xl md:text-6xl font-semibold md:leading-tight mb-3 md:mb-5">هل قتلت فلسطيني اليوم  ... ام دعمت اسرائيلي .... انصروا فلسطيني ولو بالمقاطعة. </h1>
+        <p class="md:text-xl md:leading-relaxed text-stone-600">
+          قائمة مقاطعة بسيطة تضم شركات إسرائيلية وكيانات عالمية لها أنشطة كبيرة في إسرائيل. وتهدف إلى توجيه أولئك الذين يسعون إلى اتخاذ قرارات شراء تهدف إلى الضغط على الحكومة الإسرائيلية والامتثال للقانون الدولي.
+</p>
+      </div>
+    </section>
+    <section class="pt-12 md:pt-20">
+      <div class="container 2xl:w-8/12 sticky border-b-[1px] border-b-slate-100 md:border-b-0 top-[4.95rem] 2xl:top-[5.95rem] bg-white md:bg-transparent md:bg-gradient-to-b from-white from-30% py-3 z-20">
+        <div class="relative flex gap-2 md:gap-4">
+          <div class="search-wrapper">
+            <!-- <span class="material-symbols-rounded">بحث</span> -->
+            <input type="text" id="searchInput" onkeyup="filterFunction()" placeholder="ابحث عن الشركات أو التأثير....">
+          </div>
+          <!-- <div id="filterBtn" onclick="hideLow()">Hide Low Impact</div> -->
+        </div>
+      </div>
+      <div class="container 2xl:w-8/12 mt-10">
+        <ul id="boycottList">
+          <div class="boycott-category">
+            <h3>التكنولوجيا والكمبيوتر</h3>
+            <li class="high">
+              <div class="md:flex items-center" id="cisco">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/cisco.png" alt="cisco logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Cisco <span class="label high">high</span>
+                  </h4>
+                  <p>تدمج الشركة منصات في مجالات الشبكات والأمن والتعاون والتطبيقات والسحابة. ومن خلال الشركات التابعة المملوكة لها بالكامل في إسرائيل، تتمتع شركة سيسكو سيستمز بقاعدة عريضة من التواطؤ مع اقتصاد الاحتلال الإسرائيلي، وخاصة من خلال تقديم الخدمات للجيش الإسرائيلي.
+                    .</p>
+                  <!-- <p class="country">United States</p><a href="https://www.whoprofits.org/companies/company/6529?cisco-systems" target="_blank">www.whoprofits.org</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="dell">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/dell.png" alt="dell logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Dell <span class="label high">high</span>
+                  </h4>
+                  <p>تشمل منتجات ديل أجهزة الكمبيوتر الشخصية والخوادم. في عام 2023، فازت شركة ديل تكنولوجيز بمناقصة خوادم وزارة الدفاع الإسرائيلية، والتي تعتبر أكبر مناقصة خوادم في إسرائيل حتى الآن. يبلغ نطاق العقد 150 مليون دولار أمريكي لمدة عامين، حيث ستوفر ديل الخوادم والصيانة للجيش الإسرائيلي ووزارة الدفاع الإسرائيلية (IMOD). ومن المعروف أن مؤسسة مايكل وسوزان ديل، التي أنشأها مؤسسو ديل، تقدم الدعم المباشر لإسرائيل.
+                    .</p>
+                  <!-- <div class="subbrands">
+                    <div>Michael &amp; Susan Dell Foundation</div>
+                  </div> -->
+                  <!-- <p class="country">United States</p><a href="https://www.whoprofits.org/companies/company/7370?dell-technologies" target="_blank">www.whoprofits.org</a><a href="https://www.dell.org/israel/" target="_blank">www.dell.org</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="ge">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/ge.png" alt="ge logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>General Electric <span class="label medium">medium</span>
+                  </h4>
+                  <p>شركة متعددة الجنسيات مقرها الولايات المتحدة، تعمل في مجالات الطاقة والطاقة المتجددة والطيران والرعاية الصحية. تقدم الشركة توربينات الرياح وخدمات الصيانة لمشروعين كبيرين لطاقة الرياح في الجولان السوري المحتل، "إيميك هاباشا" و"روح بريشيت"، أكبر مشاريع الطاقة المتجددة في إسرائيل.
+                    .</p>
+                  <!-- <p class="country">United States</p><a href="https://www.whoprofits.org/companies/company/6337?general-electric" target="_blank">www.whoprofits.org</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="google">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/google.png" alt="google logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Google (Alphabet) <span class="label medium">medium</span>
+                  </h4>
+                  <p>أنشأت جوجل&amp;مراكز بحث وتطوير في إسرائيل، تركز بشكل أساسي على خوارزميات البحث وتقنيات الإعلان والأمن. بالإضافة إلى ذلك، استحوذت على شركات ناشئة إسرائيلية، بما في ذلك Waze. بالتعاون مع أمازون، أطلقت جوجل مشروع Nimbus في عام 2021 لتوفير الخدمات السحابية للحكومة والجيش الإسرائيليين. وبينما يهدف هذا المشروع إلى تعزيز البنية التحتية التكنولوجية لإسرائيل، فقد واجه أيضًا انتقادات لمساعدته في المراقبة والتأثير على حقوق الفلسطينيين.
+                    .</p>
+                  <div class="subbrands">
+                    <div>Android</div>
+                    <div>Chrome</div>
+                    <div>DeepMind</div>
+                    <div>YouTube</div>
+                    <div>Waymo</div>
+                  </div>
+                  <!-- <p class="country">United States</p>
+                  <p class="alternative">Firefox &amp; DuckDuckGo</p><a href="https://economictimes.indiatimes.com/news/international/business/google-fires-workers-protesting-1-2-billion-contract-to-provide-israel-ai-cloud-services-through-project-nimbus/articleshow/109390145.cms?from=mdr" target="_blank">www.economictimes.com</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="hp">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/hp.png" alt="hp logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>HP <span class="label high">high</span>
+                  </h4>
+                  <p>تمتلك شركة HP&amp;مراكز للبحث والتطوير في كريات جات تساهم في تقنيات الطباعة والحوسبة. وكانت شركة HP هي المزود الوحيد لخوادم Itanium لنظام Aviv، وهو الإدارة الإسرائيلية للمعابر الحدودية والسكان والهجرة.
+                    .</p>
+                  <div class="subbrands">
+                    <div>Fitstation</div>
+                    <div>HP Wolf Security</div>
+                    <div>HyperX</div>
+                    <div>OMEN</div>
+                    <div>Z</div>
+                  </div>
+                  <!-- <p class="country">United States</p><a href="https://www.whoprofits.org/companies/company/3774?hewlett-packard-enterprise-hpe" target="_blank">www.whoprofits.org</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="ibm">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/ibm.png" alt="ibm logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>IBM <span class="label medium">medium</span>
+                  </h4>
+                  <p>تتمتع الشركة&amp;حضور قوي في مجال البحث والتطوير في إسرائيل يركز على تقنيات الحوسبة السحابية والذكاء الاصطناعي والأمن السيبراني واستحوذت على العديد من شركات التكنولوجيا الإسرائيلية.
+                    .</p>
+                  <!-- <p class="country">United States</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="very high">
+              <div class="md:flex items-center" id="intel">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/intel.png" alt="intel logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Intel <span class="label very high">very high</span>
+                  </h4>
+                  <p>تمتلك شركة إنتل العديد من المرافق في إسرائيل&amp;وقد طورت العديد من رقائقها في مراكز البحث والتطوير الإسرائيلية. يقع مصنع إنتل فاب 28 لإنتاج رقائق 7 نانومتر في كريات جات التي تأسست غرب أنقاض قرية عراق المنشية الفلسطينية. في 26 ديسمبر 2023، أعلنت إنتل عن أكبر استثمار لها حتى الآن - خطة بقيمة 25 مليار دولار لبناء مصنع رقائق جديد في إسرائيل.
+                  </p>
+                  <!-- <p class="country">United States</p>
+                  <p class="alternative">AMD</p><a href="https://en.wikipedia.org/wiki/Kiryat_Gat" target="_blank">www.wikipedia.org</a><a href="https://edition.cnn.com/2023/12/26/tech/intel-israel-investment/index.html" target="_blank">www.CNN.com</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="micron">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/micron.png" alt="micron logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Micron <span class="label medium">medium</span>
+                  </h4>
+                  <p>أحد مصانع شركة ميكرون يقع في كريات جات، التي تأسست غرب أنقاض قرية فلسطينية قديمة.
+                    .</p>
+                  <!-- <p class="country">United States</p>
+                  <p class="alternative">TSCM or Samsung produced chips</p><a href="https://en.wikipedia.org/wiki/Kiryat_Gat" target="_blank">www.wikipedia.org</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="microsoft">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/microsoft.png" alt="microsoft logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Microsoft <span class="label medium">medium</span>
+                  </h4>
+                  <p>استحوذت على العديد من الشركات الناشئة الإسرائيلية ولديها حضور كبير&amp;ي مجال البحث والتطوير في البلاد وتتخصص في الأمن السيبراني وتقنيات الذكاء الاصطناعي. تتمتع مايكروسوفت بتاريخ من المشاركة العميقة مع صناعة التكنولوجيا الفائقة الإسرائيلية وعلاقات وثيقة مع الجيش الإسرائيلي. في عام 2023، من المتوقع أن تفتتح مايكروسوفت أول منطقة لمركز البيانات السحابي في إسرائيل.
+                    .</p>
+                  <!-- <p class="country">United States</p>
+                  <p class="alternative">Linux or MacOS</p><a href="https://www.whoprofits.org/companies/company/7371?microsoft" target="_blank">www.whoprofits.org</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="nvidia">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/nvidia.png" alt="nvidia logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>NVIDIA <span class="label medium">medium</span>
+                  </h4>
+                  <p>تتضمن عمليات NVIDIA في إسرائيل بشكل أساسي تقنيات الذكاء الاصطناعي والتعلم العميق. كما استحوذت NVIDIA على شركة Mellanox Technologies الإسرائيلية التي تتميز بمنتجات الشبكات. جمعت NVIDIA مؤخرًا 10 ملايين دولار للجمعيات الخيرية الإسرائيلية التي تساعد المدنيين المتضررين من الحرب، وتبرعت بأجهزة كمبيوتر للذين تم إجلاؤهم من شمال وجنوب إسرائيل، وقدمت وجبات ساخنة من مكتبها في يوكنعام.
+                    .</p>
+                  <!-- <p class="country">United States</p>
+                  <p class="alternative">AMD</p><a href="https://www.channelnewsasia.com/business/israel-hamas-war-nvidia-chipmaker-raises-15-million-war-hit-civilians-4009491" target="_blank">www.channelnewsasia.com</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="oracle">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/oracle.png" alt="oracle logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Oracle <span class="label low">low</span>
+                  </h4>
+                  <p>
+                    استحوذت على العديد من الشركات الإسرائيلية ولها تواجد في إسرائيل بشكل أساسي من خلال خدمات المبيعات والدعم.
+                  .</p>
+                  <!-- <p class="country">United States</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="qualcomm">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/qualcomm.png" alt="qualcomm logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Qualcomm <span class="label low">low</span>
+                  </h4>
+                  <p>
+                    تدير شركة كوالكوم مرافق البحث والتطوير في إسرائيل والتي تركز على تقنيات الاتصالات اللاسلكية.
+                    .</p>
+                  <!-- <p class="country">United States</p>
+                  <p class="alternative">TSCM or Samsung produced chips</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="siemens">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/siemens.png" alt="siemens logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Siemens <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    وثّق فريق "من المستفيد" أنظمة التحكم في حركة المرور من إنتاج شركة سيمنز على الطريق رقم 5 والطريق رقم 443 في الضفة الغربية المحتلة، كجزء من نظام الطرق الإسرائيلي الذي يُحظر على الفلسطينيين السفر عليه. في مارس 2018، وقعت شركة سيمنز وشركة السكك الحديدية الإسرائيلية المملوكة للدولة عقدًا بقيمة 917 مليون دولار أمريكي لتسليم 60 مجموعة قطارات إقليمية من طراز Desiro HC، بإجمالي 330 عربة قطار كهربائية، على مدى عشر سنوات.
+                        .</p>
+                  <!-- <p class="country">Germany</p><a href="https://www.whoprofits.org/companies/company/3958?siemens" target="_blank">www.whoprofits.org</a> -->
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="px-5 py-4 flex flex-col md:flex-row items-start md:items-center rounded-md leading-relaxed bg-blue-100 border-[1px] border-blue-200 text-blue-950 mb-20 text-sm"> <span class="material-symbols-rounded mr-4 text-blue-600 !text-[3rem] mb-2 md:mb-0 ">معلومات</span>
+            <div> 
+              <h4 class="text-lg font-semibold mb-1">
+                تشكل التكنولوجيا ما يقرب من 20% من الناتج المحلي الإجمالي لإسرائيل
+              </h4>
+              <p class="mb-1">
+                تساهم صناعة التكنولوجيا والكمبيوتر بشكل كبير في اقتصاد إسرائيل، حيث تمثل 18.1% من الناتج المحلي الإجمالي وحوالي 50% من صادراتها. وهذا يجعل من الضروري أن يكون المستهلكون على علم عند شراء منتجات مثل أجهزة الكمبيوتر والهواتف الذكية والأجهزة المنزلية وما إلى ذلك.
+.</p>
+            </div>
+          </div>
+          <!-- طعام و مشروبات -->
+          <div class="boycott-category">
+            <h3> طعام و مشروبات </h3>
+            <li class="medium">
+              <div class="md:flex items-center" id="achva">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/achva.png" alt="achva logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Achva <span class="label medium">medium</span>
+                  </h4>
+                  <p>شركة أغذية إسرائيلية متخصصة في الطحينة والحلاوة وغيرها من المنتجات المماثلة. يتم توزيع منتجاتها محليًا ودوليًا.</p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="carrefour">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/carrefour.png" alt="carrefour logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Carrefour <span class="label high">high</span>
+                  </h4>
+                  <p>في الثامن من مارس 2022، كشفت مجموعة كارفور عن اتفاقية امتياز في إسرائيل، بالشراكة مع شركة إليكترا للمنتجات الاستهلاكية والشركة التابعة لها ينوت بيتان. وتشارك هذه الكيانات في أنشطة داخل المستوطنات الإسرائيلية المثيرة للجدل. وهذا يجعل كارفور متواطئًا في جرائم الحرب التي ارتكبها نظام الاحتلال والاستعمار الاستيطاني والفصل العنصري الإسرائيلي.
+                  </p>
+                  <div class="subbrands">
+                    <div>Promocash</div>
+                  </div>
+                  <p class="country">France</p><a href="https://bdsmovement.net/boycott-carrefour" target="_blank">www.bdsmovement.net</a>
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="cocacola">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/cocacola.png" alt="cocacola logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>The Central Bottling Company (Coca Cola) <span class="label low">low</span>
+                  </h4>
+                  <p>شركة المشروبات المركزية، المعروفة باسم كوكاكولا إسرائيل، هي شركة إسرائيلية خاصة لتصنيع وتوزيع المشروبات الغازية ومنتجات الألبان والمشروبات الكحولية. الشركة هي صاحبة الامتياز الحصري لشركة كوكاكولا في إسرائيل..</p>
+                  <div class="subbrands">
+                    <div>Coca Cola</div>
+                    <div>Sprite</div>
+                    <div>Fanta</div>
+                    <div>Powerade</div>
+                    <div>Minute Maid</div>
+                    <div>Dasani</div>
+                    <div>FUZE tea</div>
+                  </div>
+                  <p class="country">Israel (Local)</p>
+                  <p class="alternative">Local soft drinks</p><a href="https://www.whoprofits.org/companies/company/4081?the-central-bottling-company-cbc-coca-cola-israel" target="_blank">www.whoprofit.org</a>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/no-logo.png" alt="Missing logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Elite <span class="label medium">medium</span>
+                  </h4>
+                  <p>تعتبر شركة Elite جزءًا من مجموعة شتراوس، ولها حضور كبير في سوق الحلويات والشوكولاتة والقهوة في إسرائيل..</p>
+                  <p class="country">Israel (Local)</p>
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="mcdonalds">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/mcdonalds.png" alt="mcdonalds logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>McDonalds <span class="label low">low</span>
+                  </h4>
+                  <p>تمتلك ماكدونالدز العديد من المطاعم في إسرائيل، ويتبرع أحد أكبر مستثمريها بمبالغ كبيرة لقضايا مختلفة في إسرائيل. كما قدمت ماكدونالدز وجبات مجانية للقوات الإسرائيلية وسط الحرب مع حماس. كما تبرعت ماكدونالدز من دول أخرى في الشرق الأوسط بأموال لدعم المدنيين في غزة.
+
+                  </p>
+                  <p class="country">United States</p><a href="https://www.moneycontrol.com/news/trends/israel-hamas-war-mcdonalds-faces-boycott-after-providing-free-meals-to-israeli-troops-amid-conflict-with-hamas-11535301.html" target="_blank">www.moneycontrol.com</a>
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="nestle">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/nestle.png" alt="nestle logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Nestlé <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    تتمتع شركة نستله، وهي شركة سويسرية متعددة الجنسيات، بحضور في إسرائيل من خلال استثمارها في شركة أوسيم، وهي شركة إسرائيلية كبرى لإنتاج الأغذية. ويربط هذا الاستثمار نستله بمختلف الصناعات والأسواق المحلية، مما يوسع نطاق مشاركتها في المنطقة.
+                  </p>
+                  <div class="subbrands">
+                    <div>Perrier</div>
+                    <div>Nescafé</div>
+                    <div>Nespresso</div>
+                    <div>NIDO</div>
+                    <div>Gerber</div>
+                    <div>Cerelac</div>
+                    <div>Kit Kat</div>
+                    <div>Crunch</div>
+                    <div>Smarties</div>
+                    <div>Häagen-Dazs</div>
+                    <div>Purina</div>
+                    <div>Boost</div>
+                    <div>Stouffer's</div>
+                    <div>Lean Cuisine</div>
+                    <div>Milo</div>
+                    <div>Nestea</div>
+                    <div>PowerBar</div>
+                  </div>
+                  <p class="country">switzerland</p>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="osem">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/osem.png" alt="osem logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Osem <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    تنتج شركة Osem، وهي شركة تابعة لشركة Nestlé، مجموعة واسعة من المنتجات الغذائية، ويقع مقرها الرئيسي في إسرائيل. ولديها العديد من المرافق الموجودة في جميع أنحاء إسرائيل، والتي تنتج السلع التي يتم استهلاكها محليًا ودوليًا.
+                    .</p>
+                  <p class="country">Israel (Local)</p>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="pepsi">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/pepsi.png" alt="pepsi logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Pepsi <span class="label medium">medium</span>
+                  </h4>
+                  <p> في عام 2018، استحوذت شركة بيبسيكو على شركة صودا ستريم مقابل 3.2 مليار دولار أمريكي، وهي شركة مقرها إسرائيل. وقد أثار هذا الاستحواذ ردود فعل نظرًا لموقع بعض عمليات صودا ستريم في الأراضي المتنازع عليها. كما أن بيبسيكو لديها مشروع مشترك مع شركة سابرا.
+
+                  </p>
+                  <div class="subbrands">
+                    <div>Pepsi</div>
+                    <div>Mountain Dew</div>
+                    <div>7 Up</div>
+                    <div>Mirinda</div>
+                    <div>Gatorade</div>
+                    <div>Tropicana</div>
+                    <div>Lipton Iced Teas</div>
+                    <div>Rockstar Energy</div>
+                  </div>
+                  <p class="country">United States</p>
+                  <p class="alternative">Local soft drinks</p><a href="https://www.bloomberg.com/view/articles/2018-08-22/pepsico-s-sodastream-purchase-is-sweet-news-for-israelis?leadSource=uverify%20wall" target="_blank">www.bloomberg.com</a>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="prigat">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/prigat.png" alt="prigat logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Prigat <span class="label medium">medium</span>
+                  </h4>
+                  <p>تنتج العصائر ومنتجاتها، وهي مملوكة لشركة جان شموئيل فودز. ولديها عمليات مقرها في إسرائيل وتصدر إلى بلدان مختلفة.
+                    .</p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="sabra">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/sabra.png" alt="sabra logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Sabra <span class="label high">high</span>
+                  </h4>
+                  <p>شركة صبرا، المعروفة بإنتاج الحمص وغيره من المنتجات الغذائية، مملوكة جزئياً لمجموعة شتراوس، وهي شركة إسرائيلية. ويزعم المنتقدون أن دعم صبرا يساهم بشكل غير مباشر في استمرار الصراع بسبب الدعم المزعوم الذي تقدمه مجموعة شتراوس لقوات الدفاع الإسرائيلية..</p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="sodastream">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/sodastream.png" alt="sodastream logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>SodaStream <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    شركة تصنيع إسرائيلية تشتهر بجهازها لتصنيع المياه الغازية. وقد استحوذت عليها شركة بيبسيكو، لكن العمليات الأساسية لا تزال قائمة في إسرائيل في الأراضي المتنازع عليها..</p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="starbucks">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/starbucks.png" alt="starbucks logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Starbucks <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    هوارد شولتز هو أكبر مالك خاص لأسهم ستاربكس وهو صهيوني متشدد يستثمر بكثافة في اقتصاد إسرائيل بما في ذلك استثمار بقيمة 1.7 مليار دولار في شركة Wiz الناشئة للأمن السيبراني.</p>
+                  <p class="country">United States</p><a href="https://fortune.com/2021/04/07/wiz-howard-schultz-investment-fundraising-cybersecurity-startups-starbucks-ceo/" target="_blank">www.fortune.com</a>
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="strauss">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/strauss.png" alt="strauss logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Strauss Group <span class="label high">high</span>
+                  </h4>
+                  <p>شركة أغذية إسرائيلية متعددة الجنسيات، مهمة في منتجات الألبان والوجبات الخفيفة، ولديها مجموعة متنوعة من الشراكات والتعاون في جميع أنحاء إسرائيل والعالم..</p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/no-logo.png" alt="Missing logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Tara <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    شركة ألبان أصغر حجمًا مقارنة بشركة تنوفا، لكنها لا تزال تتمتع بحضور كبير في السوق الإسرائيلية. اشترتها شركة كوكا كولا في عام 1997.
+                    
+                    .</p>
+                  <p class="country">Israel (Local)</p>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="tempo">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/tempo.png" alt="tempo logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Tempo Beverages <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    تنتج مجموعة متنوعة من المشروبات الكحولية وغير الكحولية، ولها حضور كبير في سوق المشروبات الإسرائيلية..</p>
+                  <p class="country">Israel (Local)</p>
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="tnuva">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/tnuva.png" alt="tnuva logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Tnuva <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    تعد شركة تنوفا أكبر شركة لتصنيع المواد الغذائية في إسرائيل؛ حيث تمثل مبيعاتها 70% من سوق الألبان في البلاد بالإضافة إلى مبيعات اللحوم والبيض والأغذية المعبأة..</p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+          </div>
+          <!-- ملابس -->
+          <div class="boycott-category">
+            <h3>ملابس</h3>
+            <li class="very high">
+              <div class="md:flex items-center" id="puma">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/puma.png" alt="puma logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Puma <span class="label very high">very high</span>
+                  </h4>
+                  <p>تعتبر شركة بوما متواطئة في دعم الصراع الإسرائيلي الفلسطيني بسبب رعايتها لاتحاد كرة القدم الإسرائيلي. ويشير المنتقدون إلى أن اتحاد كرة القدم الإسرائيلي يضم فرقًا من المستوطنات الإسرائيلية الواقعة في الأراضي المحتلة، وهو وضع يعتبر غير قانوني بموجب القانون الدولي. وأعلنت شركة بوما أنها لن تجدد رعايتها. وينتهي عقد بوما مع اتحاد كرة القدم الإسرائيلي في ديسمبر 2024.
+                    .</p>
+                  <!-- <p class="country">Germany</p><a href="https://bdsmovement.net/boycott-puma" target="_blank">www.bdsmovement.net</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="zara">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/zara.png" alt="zara logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>ZARA <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    في عام 2022، استضاف جوي شويبل، صاحب امتياز زارا في إسرائيل، حدثًا للسياسي اليميني المتطرف إيتامار بن جفير، مما أثار غضبًا عامًا ودعوات للمقاطعة، بما في ذلك من شخصيات بارزة مثل وزيرة النقل الإسرائيلية ميراف ميخائيلي. تشمل الشركات الأخرى التابعة لشركات إنديتكس أيضًا:
+</p>
+                  <div class="subbrands">
+                    <div>Pull&amp;Bear</div>
+                    <div>Bersheka</div>
+                    <div>Stradivarious</div>
+                  </div>
+                  <!-- <p class="country">Spain</p><a href="https://www.euronews.com/2022/10/24/israel-election-zara" target="_blank">www.euronews.com</a> -->
+                </div>
+              </div>
+            </li>
+          </div>
+          <!--  الخدمات والمنصات عبر الإنترنت -->
+          <div class="boycott-category">
+            <h3>  الخدمات والمنصات عبر الإنترنت</h3>
+            <li class="medium">
+              <div class="md:flex items-center" id="amazon">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/amazon.png" alt="amazon logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Amazon <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    شركة تكنولوجية عملاقة متعددة الجنسيات تركز على التجارة الإلكترونية والحوسبة السحابية وقطاعات أخرى مختلفة. أنشأت أمازون مراكز بيانات ومكاتب في إسرائيل. مشروع نيمبوس هو تعاون بين جوجل وأمازون لتوفير خدمات سحابية للحكومة والجيش الإسرائيليين، تم إطلاقه في عام 2021. وبينما كان يهدف إلى تعزيز البنية التحتية التكنولوجية لإسرائيل، واجه المشروع انتقادات بسبب مساعدته المحتملة للمراقبة والتأثير على حقوق الفلسطينيين، مما أثار مخاوف أخلاقية.
+                        .</p>
+                  <!-- <p class="country">United States</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="very high">
+              <div class="md:flex items-center" id="airbnb">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/airbnb.png" alt="airbnb logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Airbnb <span class="label very high">very high</span>
+                  </h4>
+                  <p>
+                    شركة أمريكية عامة تعمل في مجال تأجير أماكن الإقامة عبر الإنترنت. وتقدم الشركة قوائم في أكثر من 220 دولة ومنطقة حول العالم. وتقدم Airbnb قوائم أماكن الإقامة في المستوطنات غير القانونية على الأراضي الفلسطينية والسورية المحتلة.
+                      .</p>
+                  <!-- <p class="country">United States</p><a href="https://www.whoprofits.org/companies/company/3815?airbnb" target="_blank">www.whoprofits.org</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="very high">
+              <div class="md:flex items-center" id="booking">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/booking.png" alt="booking logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Booking Holdings (Booking.com) <span class="label very high">very high</span>
+                  </h4>
+                  <p>
+                    من خلال موقعها الإلكتروني، تقوم Booking.com بالترويج للعقارات الواقعة على الأراضي الفلسطينية والسورية المحتلة. يتم إدراج العقارات في المستوطنات الإسرائيلية في الضفة الغربية المحتلة على أنها تقع إما في إسرائيل أو في "الأراضي الفلسطينية - المستوطنات الإسرائيلية"، بينما يتم إدراج العقارات الواقعة في القدس الشرقية المحتلة والجولان السوري حصريًا على أنها تقع في إسرائيل، مما يؤدي إلى تضليل المستهلكين الذين يحجزون إيجارات قصيرة الأجل أو طويلة الأجل.
+                      .</p>
+                  <!-- <p class="country">USA</p><a href="https://www.whoprofits.org/companies/company/3768?booking-com" target="_blank">www.whoprofits.org</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="ebay">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/ebay.png" alt="ebay logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>eBay <span class="label low">low</span>
+                  </h4>
+                  <p>إيباي، وهي شركة التجارة الإلكترونية الأمريكية المتعددة الجنسيات، لها تواجد في إسرائيل بشكل أساسي من خلال الاستحواذ على الشركات المحلية وإنشاء مراكز التطوير.
+                    .</p>
+                  <!-- <p class="country">United States</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="expedia">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/expedia.png" alt="expedia logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Expedia Group <span class="label high">high</span>
+                  </h4>
+                  <p>Expedia Group Inc. 
+                    هي شركة سفر عبر الإنترنت. تقدم المجموعة حجز غرف الفنادق ومقاعد الطائرات وتأجير السيارات وخدمات الوجهات من خلال موردي السفر. من خلال مواقع الحجز والبحث عن السفر، Expedia.com وHotels.com والشركة التابعة لها trivago، تروج الشركة للعقارات الواقعة على الأراضي الفلسطينية والسورية المحتلة.
+.</p>
+                  <div  class="subbrands">
+                    <div>Expedia.com</div>
+                    <div>Hotels.com</div>
+                    <div>Trivago</div>
+                    <div>Vrbo</div>
+                    <div>Travelocity</div>
+                    <div>Hotwire</div>
+                    <div>Orbitz</div>
+                    <div>ebookers</div>
+                    <div>CheapTickets</div>
+                    <div>Expedia Cruises</div>
+                    <div>Wotif</div>
+                    <div>CarRentals</div>
+                    <div>Egencia</div>
+                  </div>
+                  <!-- <p class="country">United States</p><a href="https://www.whoprofits.org/companies/company/7282?7282-2" target="_blank">www.whoprofits.org</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="fiverr">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/fiverr.png" alt="fiverr logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Fiverr <span class="label high">high</span>
+                  </h4>
+                  <p>هو سوق إلكتروني لخدمات العمل الحر، تأسس في إسرائيل ونما منذ ذلك الحين على مستوى العالم. يربط هذا السوق الشركات بالعاملين المستقلين الذين يقدمون خدمات رقمية في فئات مختلفة.
+                    .</p>
+                  <!-- <p class="country">Israel (Glob  al)</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="monday">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/monday.png" alt="monday logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Monday.com <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    Monday.com، وهي شركة تقنية مقرها تل أبيب، متخصصة في برامج إدارة العمل القابلة للتخصيص. وباعتبارها واحدة من أكثر الشركات الناشئة قيمة في إسرائيل، تشتهر بمنصة Work OS، التي تلبي احتياجات قاعدة عملاء عالمية في مختلف الصناعات.
+                    .</p>
+                  <!-- <p class="country">Israel (Global)</p><a href="https://investorplace.com/2021/06/mndy-stock-ipo-what-to-know-as-monday-com-starts-trading-today/" target="_blank">www.investorplace.com</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="tabnine">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/tabnine.png" alt="tabnine logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Tabnine <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    Tabnine هي أداة لاستكمال التعليمات البرمجية تعمل بالذكاء الاصطناعي، تم تطويرها في إسرائيل، وتعمل على تحسين كفاءة الترميز عبر لغات البرمجة المختلفة. وهي مصممة لتبسيط عملية تطوير البرامج من خلال التكامل مع محرري التعليمات البرمجية المتعددين.
+.</p>
+                  <!-- <p class="country">Israel (Global)</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="tripadvisor">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/tripadvisor.png" alt="tripadvisor logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>TripAdvisor <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    من خلال مواقعها الإلكترونية لحجز السفر، تعلن شركة TripAdvisor عن الفنادق والمنتجعات والمطاعم وبيوت الضيافة في الضفة الغربية المحتلة والقدس الشرقية المحتلة والجولان السوري المحتل.
+.</p>
+                  <div class="subbrands">
+                    <div>Bokun.io</div>
+                    <div>Cruisecritic</div>
+                    <div>Flipkey</div>
+                    <div>Thefork</div>
+                    <div>Helloreco</div>
+                    <div>Holidaylettings</div>
+                    <div>Housetrip</div>
+                    <div>Jetsetter</div>
+                    <div>Niumba</div>
+                    <div>Seatguru</div>
+                    <div>Singleplatform</div>
+                    <div>Vacationhomerentals</div>
+                    <div>Viator</div>
+                  </div>
+                  <!-- <p class="country">United States</p><a href="https://www.whoprofits.org/companies/company/3767?trip-advisor" target="_blank">www.whoprofits.org</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="very high">
+              <div class="md:flex items-center" id="wix">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/wix.png" alt="wix logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Wix.com <span class="label very high">very high</span>
+                  </h4>
+                  <p>
+                    Wix هي منصة تتيح للمستخدمين إنشاء مواقع ويب من خلال استخدام أدوات السحب والإفلات عبر الإنترنت. ولديها قاعدة مستخدمين كبيرة في جميع أنحاء العالم. وتظهر رسائل داخلية مسربة أن Wix شجعت موظفيها على إنشاء محتوى يدعم "رواية إسرائيل" في صراع البلاد مع مسلحي حماس في غزة.
+                    .</p>
+                  <div class="subbrands">
+                    <div>Wixanswers.com</div>
+                  </div>
+                  <!-- <p class="country">Israel (Global)</p><a href="https://www.irishtimes.com/ireland/2023/10/24/internal-wix-chat-encouraged-staff-to-support-israels-narrative-in-hamas-conflict/" target="_blank">www.irishtimes.com</a> -->
+                </div>
+              </div>
+            </li>
+          </div>
+          <!--   الخدمات المصرفية -->
+          <div class="boycott-category">
+            <h3>  الخدمات المصرفية</h3>
+            <li class="very high">
+              <div class="md:flex items-center" id="axa">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/axa.png" alt="axa logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>AXA <span class="label very high">very high</span>
+                  </h4>
+                  <p>
+                    شركة تأمين متعددة الجنسيات، بسبب استثماراتها في بعض الشركات والبنوك الإسرائيلية التي يُزعم أنها متورطة في أنشطة تتعلق بالصراع الإسرائيلي الفلسطيني. يعتقد مؤيدو المقاطعة أن استثمارات شركة أكسا تساهم بشكل غير مباشر في انتهاكات القانون الدولي وانتهاكات حقوق الإنسان ضد الفلسطينيين.
+                        </p>
+                  <!-- <p class="country">France</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="bankinvest">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/bankinvest.png" alt="bankinvest logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Bankinvest <span class="label low">low</span>
+                  </h4>
+                  <p>
+                    ترتبط شركة بانك إنفست مالياً بالاحتلال الإسرائيلي للأراضي الفلسطينية. فهي تقدم القروض والضمانات للشركات التي تمارس أنشطة على الأراضي المحتلة أو تستثمر الأموال فيها.
+.</p>
+                  <!-- <p class="country">Denmark</p><a href="https://dontbuyintooccupation.org/wp-content/uploads/2021/10/DBIO-report-DEF_aangepast.pdf" target="_blank">www.dontbuyintooccupation.org (PDF)</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="bnp">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/bnp.png" alt="bnp logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>BNP Paribas <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    واتهم بنك بي إن بي باريبا بالحفاظ على علاقات تجارية واستثمارات مع شركات متورطة في بناء المستوطنات الإسرائيلية واستدامتها. ويزعم المنتقدون أن مثل هذه العلاقات تجعل البنك متواطئا في القضايا القانونية وحقوق الإنسان المرتبطة بالاحتلال.
+                .</p>
+                  <!-- <p class="country">France</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="citibank">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/citibank.png" alt="citibank logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Citibank (Citigroup) <span class="label medium">medium</span>
+                  </h4>
+                  <p>وقد زعم البعض أن سيتي بنك تربطه علاقات مالية بشركات متورطة في عمليات عسكرية وأمنية في الأراضي المحتلة. ويزعم الناشطون أن هذه العلاقات تدعم بشكل غير مباشر الأعمال المرتبطة بالاحتلال الإسرائيلي.
+                  </p>
+                  <!-- <p class="country">United States</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="danskebank">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/danskebank.png" alt="danskebank logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Danske Bank <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    منذ عام 2018، قدم بنك دانسكه قروضًا وضمانات بقيمة 16 مليار كرونة دانمركية تقريبًا للشركات المرتبطة بالمستوطنات. ويشمل القرض شركة هايدلبرغ سيمنت الألمانية. تعرضت هايدلبرغ سيمنت لانتقادات لسنوات بسبب استخراج الموارد الطبيعية من الأراضي الفلسطينية المحتلة في انتهاك للقانون الدولي وتوريد الأسمنت لتوسيع المستوطنات الإسرائيلية غير القانونية المحيطة.
+.</p>
+                  <!-- <p class="country">Denmark</p><a href="https://dontbuyintooccupation.org/wp-content/uploads/2021/10/DBIO-report-DEF_aangepast.pdf" target="_blank">www.dontbuyintooccupation.org (PDF)</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="hsbc">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/hsbc.png" alt="hsbc logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>HSBC <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    وزعم ناشطون أن بنك HSBC لديه استثمارات في شركات تورد المعدات والخدمات العسكرية لإسرائيل، وهو ما يزعمون أنه يساهم في إدامة الاحتلال الإسرائيلي وانتهاكات حقوق الإنسان المزعومة ضد الفلسطينيين.
+                    .</p>
+                  <!-- <p class="country">United Kingdom</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="jpmorgan">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/jpmorgan.png" alt="jpmorgan logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>JPMorgan Chase <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    وتواجه جي بي مورجان اتهامات بإقامة علاقات مالية وتجارية كبيرة مع شركات ومؤسسات إسرائيلية مختلفة. ويزعم المنتقدون أن بعض هذه الكيانات متورطة بشكل مباشر أو غير مباشر في الاحتلال واستمرار الأنشطة الاستيطانية في الضفة الغربية.
+.</p>
+                  <!-- <p class="country">United States</p> -->
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="nykredit">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/nykredit.png" alt="nykredit logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Nykredit <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    ترتبط شركة نيكريديت مالياً بالاحتلال الإسرائيلي للأراضي الفلسطينية. فهي تقدم القروض والضمانات للشركات التي تمارس أنشطة على الأراضي المحتلة أو تستثمر الأموال فيها.
+.</p>
+                  <!-- <p class="country">Denmark</p><a href="https://dontbuyintooccupation.org/wp-content/uploads/2021/10/DBIO-report-DEF_aangepast.pdf" target="_blank">www.dontbuyintooccupation.org (PDF)</a> -->
+                </div>
+              </div>
+            </li>
+          </div>
+          <!-- الصيدلة والطب -->
+           <div class="boycott-category">
+            <h3>الصيدلة والطب </h3>
+            <li class="medium">
+              <div class="md:flex items-center" id="actavis">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/actavis.png" alt="actavis logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Actavis Generics <span class="label medium">medium</span>
+                  </h4>
+                  <p>كانت شركة Actavis Generics، التي استحوذت عليها شركة Teva Pharmaceutical Industries في عام 2016، رائدة عالمية في مجال الأدوية الجنيسة، وتتخصص في تطوير وتصنيع الأدوية بأسعار معقولة. وقد عزز هذا التكامل محفظة منتجات Teva الجنيسة وحضورها في السوق العالمية..</p>
+                  <p class="country">German</p><a href="https://en.wikipedia.org/wiki/Teva_Pharmaceuticals" target="_blank">www.wikipedia.org</a>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="ratiopharm">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/ratiopharm.png" alt="ratiopharm logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Ratiopharm <span class="label medium">medium</span>
+                  </h4>
+                  <p>تخصصت شركة Ratiopharm، وهي شركة رائدة في مجال الأدوية الجنيسة استحوذت عليها شركة Teva Pharmaceutical Industries في عام 2010، في إنتاج الأدوية الجنيسة بأسعار معقولة. وقد أدى هذا الاستحواذ إلى توسيع محفظة الأدوية الجنيسة لشركة Teva بشكل كبير وتعزيز مكانتها في سوق الأدوية العالمية</p>
+                  <p class="country">German</p><a href="https://en.wikipedia.org/wiki/Teva_Pharmaceuticals" target="_blank">www.wikipedia.org</a>
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="teva">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/teva.png" alt="teva logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Teva <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    شركة تيفا للصناعات الدوائية المحدودة، والتي يشار إليها غالبًا باسم تيفا، هي شركة أدوية إسرائيلية متعددة الجنسيات يقع مقرها الرئيسي في بتاح تكفا، إسرائيل. أنشطة تيفا في إسرائيل كبيرة، نظرًا لأنها نشأت هناك وأنشأت مقرها العالمي في البلاد. تدير تيفا مرافق تصنيع في جميع أنحاء إسرائيل، والتي تنتج مجموعة متنوعة من الأدوية التي يتم توزيعها محليًا ودوليًا.
+                  </p>
+                  <div class="subbrands">
+                    <div>Allen &amp; Hanburys</div>
+                    <div>Assia</div>
+                    <div>Auspex Pharmaceuticals</div>
+                    <div>Cephalon</div>
+                    <div>Gecko Health Innovations</div>
+                    <div>Glaxo</div>
+                    <div>Ikapharm</div>
+                    <div>IVAX Corporation</div>
+                    <div>Labrys Biologics</div>
+                    <div>Margarine Unie</div>
+                    <div>MicroDose</div>
+                    <div>Novopharm</div>
+                    <div>NuPathe after</div>
+                    <div>Plantex</div>
+                    <div>Rimsa</div>
+                    <div>Salomon, Levin, and Elstein Ltd</div>
+                    <div>Taiyo Pharmaceutical Industry</div>
+                    <div>Zori</div>
+                  </div>
+                  <p class="country">Israel (Global)</p><a href="https://www.whoprofits.org/companies/company/4212?teva-pharmaceutical-industries" target="_blank">www.whoprofits.org</a>
+                </div>
+              </div>
+            </li>
+          </div> 
+       <!-- تحذير  -->
+          <!-- <div class="px-5 py-4 flex flex-col md:flex-row items-start md:items-center rounded-md leading-relaxed bg-amber-100 border-[1px] border-amber-200 text-amber-950 mb-20 text-sm"> <span class="material-symbols-rounded mr-4 text-amber-500 !text-[3rem] mb-2 md:mb-0 ">warning</span>
+            <div> 
+              <h4 class="text-lg font-semibold mb-1">Warning: Don't Stop Medications for Boycotts</h4>
+              <p class="mb-1">Boycotting by discontinuing medications is not advised. This notice seeks to increase awareness of Israeli pharmaceuticals, urging the seeking of alternative brands when possible. However, if no substitutes are available, it's crucial to keep taking your prescribed medication.</p>
+            </div>
+          </div> -->
+          <!-- الأمن الإلكتروني -->
+        <div class="boycott-category">
+            <h3>الأمن الإلكتروني </h3>
+            <li class="high">
+              <div class="md:flex items-center" id="checkpoint">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/checkpoint.png" alt="checkpoint logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Check Point Software Technologies <span class="label high">high</span>
+                  </h4>
+                  <p>
+
+                    تعتبر شركة Check Point رائدة في مجال الأمن السيبراني، حيث تقدم حلولاً أمنية واسعة النطاق ولها بصمة عميقة في مشهد الأمن السيبراني العالمي، حيث نشأت ومقرها في إسرائيل.
+                  </p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="cyberark">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/cyberark.png" alt="cyberark logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>CyberArk <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    تتخصص شركة CyberArk في إدارة الوصول المتميز، وهو جانب بالغ الأهمية من جوانب الأمن السيبراني. يقع المقر الرئيسي لشركة CyberArk في إسرائيل، وتتمتع بنطاق دولي واسع من خلال مكاتبها المنتشرة في جميع أنحاء العالم.                  </p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="imperva">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/imperva.png" alt="imperva logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Imperva <span class="label low">low</span>
+                  </h4>
+                  <p>
+                    تأسست شركة Imperva في إسرائيل في البداية، ولديها الآن مقر رئيسي في الولايات المتحدة. تقدم الشركة حلول الأمن السيبراني التي تركز على حماية مواقع الويب وتطبيقات البيانات في السحابة وفي الموقع.
+                  </p>
+                  <p class="alternative">United States</p>
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="mcafee">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/mcafee.png" alt="mcafee logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>McAfee <span class="label low">low</span>
+                  </h4>
+                  <p>
+
+                    McAfee هي شركة عالمية للأمن السيبراني لها مصالح تجارية مختلفة في إسرائيل، وتقدم حلولاً شاملة للأمن على الإنترنت.                    
+                  </p>
+                  <p class="country">United States</p>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="radware">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/radware.png" alt="radware logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Radware <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    Radware هي شركة متخصصة في الأمن السيبراني تقدم حلولاً لضمان توفر خدمة التطبيقات في مراكز البيانات المادية والافتراضية والسحابية والمحددة بالبرمجيات.</p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="varonis">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/varonis.png" alt="varonis logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Varonis <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    تأسست شركة فارونيس في إسرائيل والولايات المتحدة. وتتخصص في أمن البيانات والتحليلات، مع التركيز على حماية البيانات الحساسة، واكتشاف التهديدات الداخلية، وضمان الامتثال.</p>
+                  <p class="country">Israel &amp; United States</p>
+                </div>
+              </div>
+            </li>
+          </div> 
+          <!-- استوديوهات التطبيقات والألعاب -->
+         <div class="boycott-category">
+            <h3> الألعاب & و التطبيقات</h3>
+            <li class="medium">
+              <div class="md:flex items-center" id="crazylabs">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/crazylabs.png" alt="crazylabs logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Crazy Labs <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    Crazy Labs هي شركة إسرائيلية بارزة لنشر الألعاب على الهواتف المحمولة، ومقرها في تل أبيب. تأسست الشركة في عام 2010، وهي متخصصة في الألعاب فائقة السهولة، وتعمل على تطوير وإطلاق عناوين سريعة تواكب الاتجاهات الحالية. تتعاون Crazy Labs مع مطورين محليين للحفاظ على مكانتها في سوق الألعاب العالمية.</p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="moonactive">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/moonactive.png" alt="moonactive logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Moon Active <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    Moon Active هي شركة إسرائيلية لتطوير الألعاب المحمولة، والمعروفة بلعبتها الشهيرة Coin Master. تأسست الشركة في تل أبيب عام 2011، وتتخصص في إنشاء ألعاب غير رسمية تسبب الإدمان وتجذب جمهورًا عريضًا. Moon Active هي لاعب بارز في المشهد التكنولوجي في إسرائيل، حيث تعمل باستمرار على تحديث ألعابها لإبقاء المستخدمين منشغلين..</p>
+                  <p class="country">Israel (Global)</p>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="plarium">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/plarium.png" alt="plarium logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Plarium <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    Plarium هي شركة تطوير ألعاب إسرائيلية مقرها في هرتسليا، تأسست عام 2009. تشتهر الشركة بألعابها الاستراتيجية متعددة اللاعبين عبر الإنترنت مثل Vikings: War of Clans وRaid: Shadow Legends. باعتبارها لاعباً رئيسياً في المشهد التكنولوجي في إسرائيل..</p>
+                  <p class="country">Israel (Global)</p><a href="https://en.wikipedia.org/wiki/Plarium" target="_blank">www.wikipedia.org</a>
+                </div>
+              </div>
+            </li>
+            <li class="high">
+              <div class="md:flex items-center" id="playtika">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/playtika.png" alt="playtika logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Playtika Holdings Corp <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    شركة Playtika Holding Corp.، التي أسسها روبرت أنتوكول وأوري شاحاك في عام 2010، هي شركة إسرائيلية تعمل على تطوير الألعاب والتطبيقات المحمولة. أوري شاحاك هو ابن أمنون ليبكين شاحاك، رئيس أركان سابق لقوات الدفاع الإسرائيلية ووزير إسرائيلي.</p>
+                  <p class="country">Israel (Global)</p><a href="https://en.wikipedia.org/wiki/Playtika" target="_blank">www.wikipedia.org</a>
+                </div>
+              </div>
+            </li>
+          </div> 
+          <!-- اشياء اخراء  -->
+       <div class="boycott-category">
+            <h3>اشياء اخراء </h3>
+            <li class="high">
+              <div class="md:flex items-center" id="ahava">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/ahava.png" alt="ahava logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>AHAVA <span class="label high">high</span>
+                  </h4>
+                  <p>
+                    تنتج الشركة مستحضرات تجميلية باستخدام معادن البحر الميت. يقع موقع إنتاج الشركة ومركز الزوار والمتجر الرئيسي في مستوطنة متسبيه شاليم في غور الأردن المحتل.
+.</p>
+                  <p class="country">Israel (Global)</p><a href="https://www.whoprofits.org/companies/company/3807?ahava-dead-sea-laboratories" target="_blank">www.whoprofits.org</a>
+                </div>
+              </div>
+            </li>
+            <li class="very high">
+              <div class="md:flex items-center" id="cat">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/cat.png" alt="cat logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Caterpillar <span class="label very high">very high</span>
+                  </h4>
+                  <p>
+                    تصنع شركة كاتربيلر منتجات تشمل الآلات الثقيلة والأدوات الصناعية وأدوات البستنة، فضلاً عن الأحذية والملابس. وقد تم استخدام جرافات كاتربيلر من طراز D9 (والتي يطلق عليها في إسرائيل اسم تيدي بير) في تفكيك المنازل في الأراضي الفلسطينية. وقد تم تصميم هذا النموذج خصيصاً لتلبية مواصفات قوات الدفاع الإسرائيلية..</p>
+                  <p class="country">United States</p><a href="https://en.wikipedia.org/wiki/Caterpillar_D9" target="_blank">www.wikipedia.com</a>
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="disney">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/disney.png" alt="disney logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Disney <span class="label low">low</span>
+                  </h4>
+                  <p>
+                    في أعقاب الهجمات في إسرائيل، تبرعت شركة والت ديزني بمبلغ 2 مليون دولار للمنظمات التي تقدم الإغاثة الإنسانية لإسرائيل.</p>
+                  <p class="country">United States</p><a href="https://thewaltdisneycompany.com/the-walt-disney-company-donates-to-support-humanitarian-relief-following-terrorist-attacks-in-israel-2/" target="_blank">www.thewaltdisneycompany.com</a>
+                </div>
+              </div>
+            </li>
+            <li class="very high">
+              <div class="md:flex items-center" id="g4s">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/g4s.png" alt="g4s logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>G1 Secure Solutions (G4S) <span class="label very high">very high</span>
+                  </h4>
+                  <p>
+                    وتعرف الشركة أيضًا باسم G4S، وقد قدمت خدمات أمنية، بما في ذلك معدات وأفراد أمن، للشركات في المستوطنات في الضفة الغربية المحتلة، بما في ذلك موديعين عيليت ومعاليه أدوميم ومستوطنة كاليا في وادي الأردن. كما قدمت الشركة خدمات إلى حي هار أدار الاستيطاني في القدس الشرقية المحتلة. بما في ذلك العديد من الحالات الأخرى..</p>
+                  <p class="country">Israel (Global)</p><a href="https://www.whoprofits.org/companies/company/3798?g4s-israel-hashmira" target="_blank">www.whoprofits.org</a>
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="loreal">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/loreal.png" alt="loreal logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>L'Oréal <span class="label low">low</span>
+                  </h4>
+                  <p>
+                    واجهت شركة لوريال التدقيق والدعوات إلى مقاطعتها في الماضي بسبب دعمها لإسرائيل، وخاصة أثناء الصراعات التي تشمل إسرائيل وفلسطين. وكثيراً ما دارت هذه التدقيقات حول التبرعات بالمنتجات للنساء العاملات في قوات الدفاع الإسرائيلية أو غيرها من الإجراءات التي يُنظر إليها على أنها داعمة لإسرائيل..</p>
+                  <div class="subbrands">
+                    <div>Lancôme</div>
+                    <div>Yves Saint Laurent</div>
+                    <div>Giorgio Armani</div>
+                    <div>Kiehl’s</div>
+                    <div>Urban Decay</div>
+                    <div>Biotherm</div>
+                    <div>Maybelline New York</div>
+                    <div>Garnier</div>
+                    <div>NYX Professional Makeup</div>
+                    <div>Kérastase</div>
+                    <div>Redken</div>
+                    <div>La Roche-Posay</div>
+                    <div>Vichy</div>
+                    <div>SkinCeuticals</div>
+                    <div>CeraVe</div>
+                  </div>
+                  <p class="country">France</p><a href="https://www.independent.co.uk/news/world/middle-east/israelgaza-conflict-garnier-apologises-after-girly-care-packages-sent-to-female-idf-soldiers-sparks-threats-to-boycott-company-9658876.html" target="_blank">www.independent.co.uk</a>
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="puregym">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/puregym.png" alt="puregym logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Puregym <span class="label low">low</span>
+                  </h4>
+                  <p>
+                    كانت PureGym، وهي سلسلة صالات رياضية دولية، هدفًا للمقاطعة بدءًا من 9 مايو 2024. جاء ذلك بعد أن أعرب الرئيس التنفيذي همفري كوبولد عن دعمه لمبيعات الأسلحة البريطانية لإسرائيل خلال ظهوره في برنامج BBC Question Time. تواجه المملكة المتحدة ضغوطًا متزايدة لوقف هذه المبيعات وسط مزاعم بانتهاكات حقوق الإنسان من قبل إسرائيل في الصراع المستمر في غزة..</p>
+                  <p class="country">UK</p><a href="https://www.dailymail.co.uk/news/article-13405331/puregym-customers-boycott-cancel-membership-ceo-humphrey-cobbold-question-time-israel-arms-support.html" target="_blank">www.dailymail.co.uk</a>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="tempur">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/tempur.png" alt="tempur logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Tempur Sealy <span class="label medium">medium</span>
+                  </h4>
+                  <p>الشركة هي شركة متخصصة في توفير مستلزمات الفراش. وهي تقوم بتطوير وتصنيع وتسويق المراتب والقواعد القابلة للتعديل والوسائد ومنتجات النوم والاسترخاء الأخرى. ومن خلال موزعها الإسرائيلي، تدير الشركة فرعًا في مجمع مدينة التصميم في مستوطنة ميشور أدوميم، بالضفة الغربية المحتلة..</p>
+                  <div class="subbrands">
+                    <div>Tempur</div>
+                    <div>Tempur-Pedic</div>
+                    <div>Cocoon</div>
+                    <div>Sealy</div>
+                    <div>Stearns &amp; Foster</div>
+                  </div>
+                  <p class="country">United States</p><a href="https://www.whoprofits.org/companies/company/7212?tempur-sealy" target="_blank">www.whoprofits.org</a>
+                </div>
+              </div>
+            </li>
+          
+            <li class="medium">
+              <div class="md:flex items-center" id="unilever">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/unilever.png" alt="unilever logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Unilever <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    تملك شركة يونيليفر العديد من العلامات التجارية بما في ذلك بن آند جيري. وعندما قررت بن آند جيري التوقف عن بيع منتجاتها في إسرائيل، باعت يونيليفر حقوق التوزيع الإسرائيلية إلى آفي زينجر للالتفاف على قرارها وإجبار العلامة التجارية بن آند جيري على الاستمرار في البيع في إسرائيل..</p>
+                  <div class="subbrands">
+                    <div>Axe</div>
+                    <div>Ben &amp; Jerry's</div>
+                    <div>Cif</div>
+                    <div>Comfort</div>
+                    <div>Dove</div>
+                    <div>Hellmann's</div>
+                    <div>Knorr</div>
+                    <div>LUX</div>
+                    <div>Love Beauty &amp; Planet</div>
+                    <div>Magnum</div>
+                    <div>OLLY Vitamins</div>
+                    <div>OMO</div>
+                    <div>Rexona</div>
+                    <div>SmartyPants Vitamins</div>
+                    <div>Sunsilk</div>
+                    <div>Vaseline</div>
+                    <div>Wall's (Frisko)</div>
+                  </div>
+                  <p class="country">United Kingdom</p><a href="https://www.unilever.com/news/press-and-media/press-releases/2022/unilever-reaches-new-business-arrangement-for-ben-jerrys-in-israel/" target="_blank">www.unilever.com</a>
+                </div>
+              </div>
+            </li>
+            <li class="low">
+              <div class="md:flex items-center" id="volkswagen">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/volkswagen.png" alt="volkswagen logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Volkswagen Group <span class="label low">low</span>
+                  </h4>
+                  <p>
+                    تقدم شركة مان هيكل المركبات المدرعة لمكافحة الشغب التي تخدم شرطة إسرائيل، والتي تصنعها شركة بيت ألفا للتكنولوجيا التابعة لقسم البحث والتطوير التكنولوجي في شركة HOS. وقد استخدمت القوات الإسرائيلية المركبة Skunk على نطاق واسع ضد الفلسطينيين سواء في المظاهرات أو كإجراء عقابي في الضفة الغربية المحتلة والقدس الشرقية وداخل الخط الأخضر، كما استخدمت ضد المدارس والفرق الطبية..</p>
+                  <div class="subbrands">
+                    <div>Volkswagen</div>
+                    <div>Audi</div>
+                    <div>SEAT</div>
+                    <div>SKODA</div>
+                    <div>Bentley</div>
+                    <div>Bugatti</div>
+                    <div>Lamborghini</div>
+                    <div>Porsche</div>
+                    <div>Ducati</div>
+                    <div>Scania</div>
+                    <div>MAN</div>
+                  </div>
+                  <p class="country">Germany</p><a href="https://www.whoprofits.org/companies/company/7374?volkswagen-group" target="_blank">www.whoprofits.org</a>
+                </div>
+              </div>
+            </li>
+            <li class="medium">
+              <div class="md:flex items-center" id="volvo">
+                <div class="company-logo flex-none w-44 pr-8"><img class="w-full border-2 md:border-0 border-slate-100 rounded-md md:rounded-none mb-3 md:mb-0" src="img/logos/volvo.png" alt="volvo logo" width="296" height="192" loading="lazy"/>
+                </div>
+                <div class="company-content">
+                  <h4>Volvo Group <span class="label medium">medium</span>
+                  </h4>
+                  <p>
+                    شركة عامة متعددة الجنسيات مقرها السويد، تصنع الشاحنات والحافلات ومعدات البناء وغيرها. توفر مجموعة فولفو المعدات الثقيلة المستخدمة في هدم المنازل الفلسطينية في الضفة الغربية المحتلة والقدس الشرقية، وبناء المستوطنات الإسرائيلية وبناء الجدار العازل..</p>
+                  <p class="country">Sweden</p><a href="https://www.whoprofits.org/companies/company/3644?volvo-group-ab-volvo" target="_blank">www.whoprofits.org</a>
+                </div>
+              </div>
+            </li>
+          </div> 
+        </ul>
+      </div>
+      <div class="container xl:w-8/12 mt-10">
+        <p class="py-4 px-6 bg-slate-50 border-slate-200 border-[1px] rounded-md text-sm text-slate-500 leading-relaxed">*
+          *تم الحصول على هذه المعلومات بدقة من منظمات مرموقة وموثوقة مثل الأمم المتحدة، ومركز أبحاث من المستفيد، وحركة مقاطعة إسرائيل وسحب الاستثمارات منها وفرض العقوبات عليها. بالإضافة إلى ذلك، تم استخدام بيانات شاملة تم تجميعها وتحليلها بواسطة نموذج GPT-4 باستخدام بيانات حتى أبريل 2023 والعديد من المقالات الإخبارية لتعزيز أهمية المحتوى المقدم.
+.</p>
+      </div>
+    </section>
+    <footer id="about" class="bg-emerald-600">
+      <div class="container">
+        <div class="flex flex-col md:flex-row mb-8 md:mb-12">
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="text-2xl md:text-5xl font-semibold md:leading-tight mb-8 pb-8 md:mb-14 md:pb-12 border-b-2 border-b-emerald-700 text-emerald-100">
+          ادعم التغيير بمقاطعة الشركات ذات الأنشطة المهمة في الكيان الاسرئيلي لتخفيف المعاناة</h2>
+      </div>
+     
+    </footer>
+    <div class="bg-emerald-700 py-8 pt-9 text-emerald-100">
+      <div class="container">
+        <div class="flex flex-col md:flex-row md:gap-20 md:items-center">
+          <div class="basis-full md:basis-6/12 mb-4 md:mb-0">
+            <p class="opacity-70">معاً لاجل المقاطعة</p>
+          </div>
+          <div class="basis-full md:basis-6/12 md:text-right">
+            <p class="opacity-70"> Copyright © 2024 | Nader Wadah </p>
+            <p class="opacity-70"> جميع الحقوق محفوضة © 2024 | المهندس /نادر وضاح</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <script src="js/main.js" defer></script>
+    <script src="js/boycott.js" defer></script>
+  </body>
+</html>
